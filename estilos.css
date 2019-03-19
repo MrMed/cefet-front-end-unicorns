@@ -1,0 +1,101 @@
+/*---------------------CONFIGURAÇÕES DO CABEÇALHO DA PÁGINA------------------------*/
+/*Configurações genéricas do cabeçalho*/
+#cabecalho {
+    background-color: #6175F0;
+    background-position: top;
+    width: 100%;
+    padding-bottom: 13px;
+}
+/*Configurações genéricas dos títulos h1 e h2 que pertencem ao cabeçalho*/
+#cabecalho h2, h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 34px;
+    color: white;
+}
+/*Configurações especificas do título h1 que pertencem ao cabeçalho*/
+#cabecalho h1{
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
+}
+/*---------------------CONFIGURAÇÕES DA PRIMEIRA PARTE DA PÁGINA (A VERDADE OCULTA)------------------------*/
+/*Configurações especificas da imagem com o id #imagem-principal*/
+#imagem-principal{
+    float: left;
+    width: 310px;
+    padding-right: 13px;
+    padding-bottom: 20px;
+}
+/*Configurações especificas do título h2 que pertencem a parte verdade*/
+#verdade  h2{
+    text-transform: capitalize;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+/*Configurações especificas para a referência inserida na parte verdade*/
+.referencia{
+    font-style: italic;
+}
+/*Garante que os blocos (UNICÓRNIOS HOJE) e (A MÚSICA DO UNICÓRNIO) venham sempre, pelo menos, após a imagem*/
+#verdade {
+    min-height: 230px;/*É o height da imagem (usei o inspecionar pra isso ;D )*/
+}
+/*---------------------CONFIGURAÇÕES DA CAIXA FLUTUANTE A DIREITA DA PÁGINA (UNICÓRNIOS HOJE)------------------------*/
+/*Configuração do corpo da caixa*/
+#hoje{
+    float: right;
+    width: 405px;
+    background-color: #F8CEF7;
+    border: 1px solid #FF56FB;
+    padding: 20px 35px 30px;
+    text-align: center;
+    margin-right: 25px;
+}
+/*Configurações especificas das imagens pertencentes a caixa*/
+#hoje img{
+    width: 112px;
+    height: 112px;
+}
+/*---------------------CONFIGURAÇÕES DA SEGUNDA PARTE DA PÁGINA (A MÚSICA DO UNICÓRNIO)------------------------*/
+/*Isso irá criar uma seção separada das demais para a Música*/
+#musica{
+    clear: left;
+    box-sizing: content-box;
+}
+/*Normalmente ele irá dar 46px de padding-left*/
+#musica p {
+    padding-left: 46px;
+}
+/*Porém para os ímpares (ou seja, a 1ª, 3ª, 5ª .. estrofe da música) e para o título da seção e para o áudio, o padding será menor ele irá dar somente 12px de padding-left*/
+#musica p:nth-child(2n+1), h2, audio{
+    padding-left: 12px;
+}
+/*O desafio de colocar as duas últimas estrofes destacadas, eu criei um div com a classe destacado*/
+.destacado{
+    background-color: #C4CAF3;
+    width: 100%;
+    color: #004A79;
+    clear: both;
+}
+/*O último paragrafo leva essas configurações de estilização do fim da página*/
+#ultimo-p {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+/*---------------------CONFIGURAÇÕES GENÉRICAS------------------------*/
+/*Configurações comuns a todos os títulos h2*/
+h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Configurações comuns a todos os paragráfos*/
+p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Configurações comuns a todo o body*/
+body{
+    font-family: "Times New Roman";
+    margin: 0px;
+}
